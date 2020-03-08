@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% for file in site.static_files %} {% if file.name == 'style.css' %} {{ file.path }} {% endif %} {% endfor %}" />
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">{{ site.title }}</a>
+      <nav>
+        <ul>
+          <li class="nav-item"><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <h3 id="footer-site-big-title">{{ site.title }}</h3>
+      <br />
+      <p id="footer-site-title">{{ site.title }}</p>
+      <p>
+        <a id="footer-site-email" href="mailto:{{ site.email }}"
+          >{{ site.email }}</a
+        >
+      </p>
+      <p>
+        <a
+          id="footer-site-github-name"
+          href="https://www.github.com/{{ site.github_username }}/"
+          >GitHub</a
+        >
+      </p>
+      <p>
+        <a
+          id="footer-site-twitter-name"
+          href="https://www.twitter.com/{{ site.twitter_username }}/"
+          >Twitter</a
+        >
+      </p>
+      <p id="footer-site-description">{{ site.description }}</p>
+    </footer>
+  </body>
+</html>

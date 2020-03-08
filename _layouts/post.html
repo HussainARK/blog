@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<h2>{{ page.title }}</h2>
+<br />
+{% if page.author %}
+<p><small>{{ page.date }} - {{ page.author }}</small></p>
+{% else %}
+<p><small>{{ page.date }}</small></p>
+{% endif %}
+<br />
+<p style="white-space: pre-line;">{{ content }}</p>

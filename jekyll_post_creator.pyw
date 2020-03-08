@@ -25,25 +25,15 @@ try:
         posts_folder = Path("./_posts")
 
         if post_name and post_date_created and post_title and post_author and post_content and post_layout:
+
             os.system(
                 f"cd _posts && ( echo --- && echo title: {post_title} && echo author: {post_author} && echo layout: {post_layout} && echo --- && echo {post_content} ) > {post_date_created}-{post_name}.md")
 
-            # *Seperator*
-
-            file = ""
-
-            # *Seperator*
-
             if posts_folder.glob(f"{post_date_created}-{post_name}.md"):
-                callback_label = Label(
-                    root, text="The Post is created Successfuly!")
+                messagebox.showinfo(program_title, "The Post is created Successfuly")
             else:
-                callback_label = Label(
-                    root, text="There's an Error Creating the Post!")
-
-            # *Seperator*
-
-            callback_label.pack()
+                messagebox.showerror(program_title, "There was an Error when creating your Post, Check if you are in your Jekyll's Project Directory")
+                
         else:
             messagebox.showwarning(program_title,
                                    "Please fill all Entries.")

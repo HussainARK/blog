@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<h2>All Posts:</h2>
+
+<br />
+
+<ul>
+  {% for post in site.posts %}
+  <p>
+    <small><small>{{ post.date }}</small></small>
+  </p>
+  <li class="jekyll-post"><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <br />
+  {% endfor %}
+</ul>
