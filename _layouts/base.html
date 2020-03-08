@@ -3,7 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% for file in site.static_files %} {% if file.name == 'style.css' %} {{ file.path }} {% endif %} {% endfor %}" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  color: black;
+  margin: 10px 10px;
+  margin-right: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
+
+.nav-item,
+.jekyll-post {
+  list-style: none;
+  margin: 10px 10px;
+}
+
+.nav-item a,
+.jekyll-post a,
+footer a,
+main a {
+  text-decoration: none;
+  color: #66f;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-item a {
+  color: black;
+  margin-right: 200px;
+}
+
+.nav-item a:hover,
+.jekyll-post a:hover,
+footer a:hover,
+main a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+footer {
+  display: grid;
+
+  grid-template-areas:
+    "site-big-title ."
+    "site-title site-github"
+    "site-email site-twitter"
+    ". site-description";
+
+  grid-column-gap: 20px;
+
+  grid-row-gap: 20px;
+
+  border-top: 1px solid #ccc;
+
+  padding: 15px 15px;
+
+  margin-top: auto;
+}
+
+/* Doing some stuff for the Footer */
+
+#footer-site-big-title {
+  margin-left: 200px;
+  grid-area: site-big-title;
+}
+
+#footer-site-title {
+  margin-left: 200px;
+  grid-area: site-title;
+}
+
+#footer-site-email {
+  margin-left: 200px;
+  grid-area: site-email;
+}
+
+#footer-site-github-name {
+  margin-left: 200px;
+  grid-area: site-github;
+}
+
+#footer-site-twitter-name {
+  margin-left: 200px;
+  grid-area: site-twitter;
+}
+
+#footer-site-description {
+  margin-left: 200px;
+  grid-area: site-description;
+}
+
+/* end of that */
+
+code,
+kbd,
+pre {
+  font-family: monospace;
+  padding: 3px 3px;
+  margin: 6px 6px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+kbd {
+  background-color: black;
+}
+
+main p {
+  padding: 10px 10px;
+}
+
+    </style>
     <title>{{ site.title }}</title>
   </head>
   <body>
