@@ -152,10 +152,10 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="/">{{ site.title }}</a>
+      <a class="logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
       <nav>
         <ul>
-          <li class="nav-item"><a href="/about">About</a></li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/about">About</a></li>
         </ul>
       </nav>
     </header>
@@ -188,15 +188,5 @@
       </p>
       <p id="footer-site-description">{{ site.description }}</p>
     </footer>
-    <script>
-      const allATags = document.getElementsByClassName("anchor");
-
-      for (aTag in allATags) {
-        aTag.setAttribute(
-          "href",
-          "{{ site.baseurl }}" + aTag.getAttribute("href")
-        );
-      }
-    </script>
   </body>
 </html>
