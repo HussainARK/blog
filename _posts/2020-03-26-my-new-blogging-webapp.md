@@ -15,11 +15,14 @@ I think this is my Starting point from Building Full-Stack Web Apps with the **P
 You can take a Look at the Complete Project on [This Link](https://bit.ly/blogi-full),
 
 Also, This is a Simple Table that Shows you the Building Block s of this Web App:
-
-|  Things/Things  |   Database  |               Back-End              |  Front-End (Complete App) |
-|:---------------:|:-----------:|:-----------------------------------:|:-------------------------:|
-|       URL       |   Nope :)   | http://blogi-backend.herokuapp.com/ | https://blogi.netlify.com |
-| Hosting Service | ElephantSQL |                Heroku               |          Netlify          |
-|      Status     |      OK     |                  OK                 |             OK            |
++-----------------+-------------+--------------------------------------+---------------------------+
+|  Things/Things  |   Database  |               Back-End               |  Front-End (Complete App) |
++-----------------+-------------+--------------------------------------+---------------------------+
+|       URL       |      :)     | https://blogi-backend.herokuapp.com/ | https://bit.ly/blogi-full |
++-----------------+-------------+--------------------------------------+---------------------------+
+| Hosting Service | ElephantSQL |                Heroku                |          Netlify          |
++-----------------+-------------+--------------------------------------+---------------------------+
+|      Status     |      OK     |                  OK                  |             OK            |
++-----------------+-------------+--------------------------------------+---------------------------+
 
 Thanks For Reading!
