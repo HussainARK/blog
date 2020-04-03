@@ -20,7 +20,7 @@ Also, This is a Simple Table that Shows you the Building Block s of this Web App
 
 |  Things/Things  |   Database  |               Back-End              |  Front-End (Complete App) |
 |:---------------:|:-----------:|:-----------------------------------:|:-------------------------:|
-|       URL       |      :)     | http://blogi-backend.herokuapp.com  | https://theblogi.web.app  |
+|       URL       |      :)     | https://blogi-backend.herokuapp.com  | https://theblogi.web.app  |
 | Hosting Service | ElephantSQL |                Heroku               |          Netlify          |
 |      Status     |      OK     |                  OK                 |             OK            |
 
